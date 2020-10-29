@@ -143,7 +143,7 @@
     });
 
     var swiper = new Swiper('.pet-slider', {
-        slidesPerView: 5,
+        slidesPerView: 7,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -154,11 +154,17 @@
         },
         loop: true,
         breakpoints: {
+            1350: {
+				slidesPerView: 6,
+			},
 			1200: {
+				slidesPerView: 5,
+            },
+            1100: {
 				slidesPerView: 4,
 			},
 			992: {
-				slidesPerView: 2,
+				slidesPerView: 3,
             },
             768: {
 				slidesPerView: 2,
@@ -170,7 +176,7 @@
     });
 
     var swiper = new Swiper('.birds-slider', {
-        slidesPerView: 5,
+        slidesPerView: 7,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -181,11 +187,17 @@
         },
         loop: true,
         breakpoints: {
+            1350: {
+				slidesPerView: 6,
+			},
 			1200: {
+				slidesPerView: 5,
+            },
+            1100: {
 				slidesPerView: 4,
 			},
 			992: {
-				slidesPerView: 2,
+				slidesPerView: 3,
             },
             768: {
 				slidesPerView: 2,
@@ -197,7 +209,7 @@
     });
 
     var swiper = new Swiper('.other-slider', {
-        slidesPerView: 5,
+        slidesPerView: 7,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -208,11 +220,17 @@
         },
         loop: true,
         breakpoints: {
+            1350: {
+				slidesPerView: 6,
+			},
 			1200: {
+				slidesPerView: 5,
+            },
+            1100: {
 				slidesPerView: 4,
 			},
 			992: {
-				slidesPerView: 2,
+				slidesPerView: 3,
             },
             768: {
 				slidesPerView: 2,
