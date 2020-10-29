@@ -181,7 +181,7 @@
         },
         loop: true,
         breakpoints: {
-			1024: {
+			1200: {
 				slidesPerView: 4,
 			},
 			992: {
@@ -190,7 +190,7 @@
             768: {
 				slidesPerView: 2,
             },
-            340: {
+            575: {
 				slidesPerView: 1,
             }
 		}
@@ -208,7 +208,7 @@
         },
         loop: true,
         breakpoints: {
-			1024: {
+			1200: {
 				slidesPerView: 4,
 			},
 			992: {
@@ -217,7 +217,7 @@
             768: {
 				slidesPerView: 2,
             },
-            340: {
+            575: {
 				slidesPerView: 1,
             }
 		}
