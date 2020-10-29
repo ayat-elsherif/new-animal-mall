@@ -242,7 +242,7 @@
     });
 
     var swiper = new Swiper('.lastOrder-slider', {
-        slidesPerView: 2,
+        slidesPerView: 3,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -254,15 +254,15 @@
         loop: true,
         breakpoints: {
 			1024: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			992: {
-				slidesPerView: 1,
+				slidesPerView: 2,
             },
             768: {
-				slidesPerView: 1,
+				slidesPerView: 2,
             },
-            340: {
+            575: {
 				slidesPerView: 1,
             }
 		}
@@ -270,7 +270,7 @@
 
 
     var swiper = new Swiper('.supplies-slider', {
-        slidesPerView: 2,
+        slidesPerView: 3,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -282,15 +282,15 @@
         loop: true,
         breakpoints: {
 			1024: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			992: {
-				slidesPerView: 1,
+				slidesPerView: 2,
             },
             768: {
-				slidesPerView: 1,
+				slidesPerView: 2,
             },
-            340: {
+            575: {
 				slidesPerView: 1,
             }
 		}
