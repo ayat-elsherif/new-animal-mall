@@ -385,7 +385,7 @@
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
         autoplay: {
-            delay: 3000,
+            delay: 10000,
             disableOnInteraction: false,
         },
         thumbs: {
