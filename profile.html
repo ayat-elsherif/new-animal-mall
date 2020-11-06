@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+		<!-- animate scss -->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<!-- bootstarp css -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- icofont -->
+		<link rel="stylesheet" href="assets/css/icofont.min.css">
+		<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+		<!-- lightcase css -->
+		<link rel="stylesheet" href="assets/css/lightcase.css">
+		<!-- swiper css -->
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<!-- custom scss -->
+		<link rel="stylesheet" href="assets/css/style-ltr.css">
+
+		<title>Animal Mall - Buy or Sell your pets</title>
+	</head>
+
+	<body>
+		<!-- preloader -->
+		<!-- <div class="preloader"><div class="load loade"><hr/><hr/><hr/><hr/></div></div> -->
+		<!-- preloader -->
+
+
+        <div class="modalHolder">
+            <div class="modal fade" id="editpetPassword" tabindex="-1" role="dialog" aria-labelledby="editpetPasswordLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">		
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="icofont-close-line"></i></span>
+                          </button>
+                          <div class="edit-pet-password">
+                                <form>
+                                    <div class="form-group">
+                                        <p>Change Password</p>
+                                        <label> Old Password*:</label>
+                                        <input class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label> New Password*:</label>
+                                        <input class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label> Confirm New Password*:</label>
+                                        <input class="form-control">
+                                    </div>
+                                    <div class="button-group mt-5">
+                                        <button type="button" class="animal-btn style-2 mb-2" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="icofont-close-line"></i> Cancel</span>
+                                          </button>
+                                          <button type="button" class="animal-btn style-2 mb-2">
+                                            <span aria-hidden="true"><i class="icofont-ui-delete"></i> Change</span>
+                                          </button>
+                                      </div>
+                                </form>
+                          </div>
+                          
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+	<div class="header-menus">
+		<div class="container-fluid px-0 top-nav">
+			<div>
+			<div class="container">
+				<div class="row mx-0 justify-content-between">
+					<ul class=" header-left">
+						<li><img src='assets/images/header/top-header/delivery.png'><span class="d-none d-md-inline"> Cash On </span> Delivery  </li>
+						<li><img src='assets/images/header/top-header/return-time.png'> Return Within 24 Hours</li>
+					</ul>
+					<ul class="header-right">
+						<li class="d-none d-xl-inline">Seller Login <i class="icofont-ui-user"></i> </li>
+						<li>العربية <img src='assets/images/header/languages/ar.png'></li>
+					</ul>
+				</div>
+			</div>
+			</div>	
+	</div>
+
+
+		<!-- Mobile Menu Start Here -->
+		<div class="mobile-menu">
+			<nav class="mobile-header d-xl-none">
+			<div class="container d-flex justify-content-between align-items-center">	
+				<div class="header-logo d-flex align-items-center justify-content-between">
+				<div class="header-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="index.html" class="logo"><img src="assets/images/logo/01.png" alt="logo"></a>
+			</div>
+			<li class="d-inline d-xl-none">Login <a href="#"><i class="icofont-ui-user"></i></a> <a href="#"><i class="icofont-plus"></i></a> </li>
+</div>
+			</nav>
+			<nav class="menu">
+				<div class="mobile-menu-area d-xl-none">
+					<div class="mobile-menu-area-inner scrollbar">
+						<div class="mobile-search">
+							<input type="text" placeholder="Search Here.........">
+							<button type="submit"><i class="icofont-search-2"></i></button>
+						</div>
+						<ul>
+                            <li>
+                                <a class="active" href="#0">Home</a>
+                              
+                            </li>
+                            <li><a href="about.html">Animals</a></li>
+                            <li>
+                                <a href="#0">Supplies</a>
+                               
+                            </li>
+                            <li>
+                                <a href="#0">Animal Services</a>
+                               							
+                            </li>
+                            <li>
+                                <a href="#0">Animal Lovers</a>
+                               
+                            </li>						
+                        </ul>
+						<div class="scocial-media">
+							<a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+							<a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+							<a href="#" class="snapchat"><i class="icofont-snapchat"></i></a>
+							<a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+							<a href="#" class="youtube"><i class="icofont-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Mobile Menu Ending Here -->
+
+		<!-- header section start -->
+		
+		<header class="header-section d-xl-block d-none">
+			
+			<div class="container-fluid">
+			
+				<div class="container px-0">
+					<div class="header-area">
+						<div class="logo">
+							<a href="index.html"><img src="assets/images/logo/01.png" alt="logo"></a>
+						</div>
+						<div class="main-menu">
+							<ul>
+								<li class="topSearch">
+									<form class="my-2 my-lg-0">
+										<div class="form-group mb-0">
+											<input type="text" class="form-control search-bar" name="search" placeholder="">
+											<button type="submit" class="btn btn-yellow search-submit">
+												<i class="icofont-search-2"></i>
+											</button>
+										</div>
+									</form>
+								</li>
+								<li>
+									<a class="active" href="#0">Home</a>
+									
+								</li>
+								<li><a href="about.html">Animals</a></li>
+								<li>
+									<a href="#0">Supplies</a>
+									
+								</li>
+								<li>
+									<a href="#0">Animal Services</a>
+																	
+								</li>
+								<li>
+									<a href="#0">Animal Lovers</a>
+								
+								</li>						
+							</ul>
+						</div>
+						<div class="author-option">
+							<button class="btn btn-yellow ">
+								<i class="icofont-plus-circle"></i> Add Your Ad
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header section ending -->
+
+	</div>
+
+	
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Magazine</li>
+			</ol>
+		</nav>	
+	</div>
+      
+
+        <!-- Popular Home pet Section Start Here -->
+       <div class="container">
+        <div class="profileCont">
+            <div class="popular-pet single padding-tb white-bg">
+                <div class="container ">
+                    <div class="section-wrapper">
+                        <div class="row justify-content-start">
+                            <div class="col-xl-10 col-12 px-0">
+                                <article>                                                       
+                                    <div class="review pet-tabs padding-tb">
+                                        <div class="container pt-3 px-0">
+                                            <div class="section-wrapper">
+                                                <div class="related">
+                                                    <ul class="tab-bar">
+                                                        <li class="tablinks" id="defaultOpen" onclick="openCity(event, 'one')">
+                                                            <span>My Profile</span>
+                                                        </li>
+                                                        <li class="tablinks" onclick="openCity(event, 'two')">
+                                                            <span>My Ads</span>
+                                                        </li>
+                                                        <li class="tablinks" onclick="openCity(event, 'three')">
+                                                            <span>Inbox</span>
+                                                        </li>
+                                                        <li class="tablinks" onclick="openCity(event, 'four')">
+                                                            <span>Reviews (15)</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div id="one" class="tabcontent">
+                                                        <div class="spe-shop">
+                                                            <div class="tec-spe">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="left">Name</div>
+                                                                        <div class="right username"><span class="">Om Hassan</span> <i class="icofont-ui-edit"></i>
+                                                                        </div> 	
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">About</div>
+                                                                        <div class="right userabout">I love cooking I love cooking I love cooking I love cooking I love cooking I love cooking  <i class="icofont-ui-edit"></i>
+                                                                        </div>
+                                                                 
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">Email</div>
+                                                                        <div class="right useremail">A@yahoo.com <i class="icofont-ui-edit"></i>
+                                                                        </div>
+                                                                        
+                                                                    </li>
+                                                                    
+                                                                    <li>
+                                                                        <div class="left">Phone</div>
+                                                                        <div class="right userphone">0552060703 <i class="icofont-ui-edit"></i>
+                                                                        </div>
+                                                                        
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">Password</div>
+                                                                        <div class="right userpass" data-toggle='modal' data-target='#editpetPassword'><span>*********</span><i class="icofont-ui-edit"></i>
+                                                                        </div>
+                                                                        
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">Location</div>
+                                                                        <div class="right petLocation">
+                                                                            <span class="useremirate">Ajman <i class="icofont-ui-edit"></i></span>,
+                                                                            <span class="userarea"> Al Rawdah <i class="icofont-ui-edit"></i></span>
+                                                                        </div>
+                                                                        
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="animal-btn style-2 mt-3"><span>Save</span></a>
+
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div id="two" class="tabcontent">
+                                                        <div class="adsCont">
+                                                            <div class="allAds">
+                                                                <div class="row justify-content-around ad-item">
+                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3 col-12">
+                                                                                <img src="assets/images/popular-animal/01.jpg">
+                                                                            </div>
+                                                                            <div class="col-md-7 col-12">
+                                                                                <p class="ad-state"><span class=" ad-active">Active</span></p>
+                                                                                <h6>Scottish PErsian Male</h6>
+                                                                                <p><small>5 Month Old</small></p>
+                                                                                <h5>1250 AED</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5 col-12 adControls">
+                                                                        <div class="row px-3">
+                                                                            <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
+                                                                        <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
+                                                                        <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-around ad-item">
+                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3 col-12">
+                                                                                <img src="assets/images/popular-animal/01.jpg">
+                                                                            </div>
+                                                                            <div class="col-md-7 col-12">
+                                                                                <p class="ad-state"><span class=" ad-review">Under Review</span></p>
+                                                                                <h6>Scottish PErsian Male</h6>
+                                                                                <p><small>5 Month Old</small></p>
+                                                                                <h5>1250 AED</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5 col-12 adControls">
+                                                                        <div class="row px-3">
+                                                                            <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
+                                                                            <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
+                                                                            <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-around ad-item">
+                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3 col-12">
+                                                                                <img src="assets/images/popular-animal/01.jpg">
+                                                                            </div>
+                                                                            <div class="col-md-7 col-12">
+                                                                                <p class="ad-state"><span class=" ad-sold">Sold</span></p>
+                                                                                <h6>Scottish PErsian Male</h6>
+                                                                                <p><small>5 Month Old</small></p>
+                                                                                <h5>1250 AED</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5 col-12 adControls">
+                                                                        <div class="row px-3">
+                                                                            <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
+                                                                        <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
+                                                                        <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                            
+                                                    <div id="three" class="tabcontent">
+                                                        <div class="inboxCont">
+                                                            <div class="row">
+                                                                <div class="col-12 inbox-item">
+                                                                    <div class="row singleMsg">
+                                                                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 msgPhotos">
+                                                                            <img src="assets/images/popular-animal/01.jpg">
+                                                                        </div>
+                                                                        <div class="col-sm-6 col-12">
+                                                                            <span><small>12 JUNE 2019</small></span>
+                                                                            <h5>Sorry Your Ad not Approved </h5>
+                                                                            <p>Your Price higher, Your photos not good, Missing details</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="deleteMsg">
+                                                                        <button class="btn"> <i class="icofont-ui-delete"></i> Delete</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 inbox-item">
+                                                                    <div class="row singleMsg">
+                                                                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 msgPhotos">
+                                                                            <img src="assets/images/popular-animal/01.jpg">
+                                                                        </div>
+                                                                        <div class="col-sm-6 col-12">
+                                                                            <span><small>12 JUNE 2019</small></span>
+                                                                            <h5>Sorry Your Ad not Approved </h5>
+                                                                            <p>Your Price higher, Your photos not good, Missing details</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="deleteMsg">
+                                                                        <button class="btn"> <i class="icofont-ui-delete"></i> Delete</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 inbox-item">
+                                                                    <div class="row singleMsg">
+                                                                        <div class="col-lg-2 col-md-4 col-sm-6 col-12 msgPhotos">
+                                                                            <img src="assets/images/popular-animal/01.jpg">
+                                                                        </div>
+                                                                        <div class="col-sm-6 col-12">
+                                                                            <span><small>12 JUNE 2019</small></span>
+                                                                            <h5>Sorry Your Ad not Approved </h5>
+                                                                            <p>Your Price higher, Your photos not good, Missing details</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="deleteMsg">
+                                                                        <button class="btn"> <i class="icofont-ui-delete"></i> Delete</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                           
+                                                    </div>
+                                                    <div id="four" class="tabcontent">
+                                                        <div class="section-wrapper pet-reviews">
+                                                            <div class="review">
+                                                                <ul class="content">
+                                                                    <li>
+                                                                        <div class="post-content">
+                                                                            <div class="content-area">
+                                                                                <div class="entry-meta">
+                                                                                    <div class="posted-on">
+                                                                                        <a href="#">Britney Doe</a>
+                                                                                        <p>Posted on December 25, 2017 at 6:57 am</p>
+                                                                                    </div>
+                                                                                    <div class="rating">
+                                                                                        <i class="icofont-star"></i>
+                                                                                        <i class="icofont-star"></i>
+                                                                                        <i class="icofont-star"></i>
+                                                                                        <i class="icofont-star"></i>
+                                                                                        <i class="icofont-star"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="entry-content">
+                                                                                    <p>Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="post-content">
+                                                                            <div class="entry-meta">
+                                                                                <div class="posted-on">
+                                                                                    <a href="#">Jonathan Doe</a>
+                                                                                    <p>Posted on December 25, 2017 at 6:57 am</p>
+                                                                                </div>
+                                                                                <div class="rating">
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="entry-content">
+                                                                                <p>Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="post-content">
+                                                                            <div class="entry-meta">
+                                                                                <div class="posted-on">
+                                                                                    <a href="#">Mack Zucky</a>
+                                                                                    <p>Posted on December 25, 2017 at 6:57 am</p>
+                                                                                </div>
+                                                                                <div class="rating">
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="entry-content">
+                                                                                <p>Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="post-content">
+                                                                            <div class="entry-meta">
+                                                                                <div class="posted-on">
+                                                                                    <a href="#">Jordi Albae</a>
+                                                                                    <p>Posted on December 25, 2017 at 6:57 am</p>
+                                                                                </div>
+                                                                                <div class="rating">
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                    <i class="icofont-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="entry-content">
+                                                                                <p>Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+		
+		<!-- Popular Home pet Section Ending Here -->
+
+
+		<!-- Footer Section Start Here -->
+		<footer class="footer">
+			<div class="footer-head">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-2 col-md-6 col-12 footer-logo">
+							<img src="assets/images/logo/logo-footer.png" alt="">
+						</div>
+						<div class="col-lg-4 col-md-6 d-none d-md-inline">
+							<h6>FOLLOW US ON</h6>
+							<div>
+								<a href="#"><i class="icofont-facebook"></i></a>
+								<a href="#"><i class="icofont-instagram"></i></a>
+								<a href="#"><i class="icofont-snapchat"></i></a>
+								<a href="#"><i class="icofont-twitter"></i></a>
+								<a href="#"><i class="icofont-youtube-play"></i></a>
+								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 d-none d-md-inline footer-delivery">
+							<img src='assets/images/header/footer/delivery.png' alt="delivery">
+							<p>CASH ON DELIVERY</p>
+						</div>
+						<div class="col-lg-3 col-md-6 d-none d-md-inline footer-return">
+							<img src='assets/images/header/footer/return-policy.png' alt='return-time'>
+							<p>24 HRS ACCEPT RETURN</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-top">
+					<div class="footer-area">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-12">
+								<h6>customer service</h6>
+								<ul>
+									<li><a href="#">Terms and Conditions</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Return Policy</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<h6>Sellers account</h6>
+								<ul>
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">My Ads</a></li>
+									<li><a href="#">Add Your Ad</a></li>
+									<li><a href="#">Log Out</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<h6>animal services</h6>
+								<ul>
+									<li><a href="#">Free Adaption</a></li>
+									<li><a href="#">Animal Vaccination</a></li>
+									<li><a href="#">Animal Hotels</a></li>
+									<li><a href="#">Animal Mating</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-6 col-12">
+								<h6>Animals & Supplies</h6>
+								<ul>
+									<li><a href="#">Pets For Sale</a></li>
+									<li><a href="#">Free Adoption</a></li>
+									<li><a href="#">Birds For Sale</a></li>
+									<li><a href="#">Animal Supplies</a></li>
+								</ul>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="text-center d-block d-md-none below-social">
+					<h6>FOLLOW US ON</h6>
+					<div>
+						<i class="icofont-facebook"></i>
+						<i class="icofont-instagram"></i>
+						<i class="icofont-snapchat"></i>
+						<i class="icofont-twitter"></i>
+						<i class="icofont-youtube-play"></i>
+					</div>
+				</div>
+				<div class="footer-bottom text-center">
+					<p>Copyright &copy; 2020 <a href="https://www.egnol.com">Egnol - Digital Web Agency</a>. All Rights Reserved</p>
+
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section Ending Here -->
+
+        <!-- scrollToTop start here -->
+        <a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i>
+        </a>
+		<!-- scrollToTop ending here -->
+
+
+		
+		<script src="assets/js/jquery.js"></script>
+		<!------------pet-single------------>
+		<script src='assets/js/inline-edit.jquery.js'></script>
+		<!------------end pet single------------->
+        <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/rater.min.js"></script><!----------for rating stars--------->
+		<script src="assets/js/tab.js"></script>
+		<script src="assets/js/lightcase.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script>
+			
+					/********************************edit Profile in place******************************* */
+							$(".username").inlineEdit({
+
+							type:'text'
+
+							});
+
+							$(".userabout").inlineEdit({
+
+							type:'textarea'
+
+							});
+
+							$(".useremail").inlineEdit({
+
+							type:'text'
+
+							});
+
+							$(".userphone").inlineEdit({
+
+							type:'text'
+
+							});
+							
+                            $(".useremirate").inlineEdit({
+								type: 'select',
+								className:'emirate',
+								data: {
+									'default': 'Ajman',
+									'opt-1': 'Sharjah',
+									'opt-2': 'Dubai'
+								}
+								});
+								$(".userarea").inlineEdit({
+								type: 'select',
+								className:'area',
+								data: {
+									'default': 'Al Rawdah',
+									'opt-1': 'Rais',
+								}
+								});
+						
+							$(".petExp").inlineEdit({
+
+							type:'text'
+
+							});
+							$(".petDrone").inlineEdit({
+
+							type:'text'
+
+							});
+							$(".petLicense").inlineEdit({
+
+							type:'text'
+
+							});
+							$(".petInsurance").inlineEdit({
+
+							type:'text'
+
+							});
+                            $(".availLocation").inlineEdit({
+
+                            type:'text'
+
+                            });
+
+					/**************************End Edit Profile in place***************************** */
+
+
+
+
+					/**************************star ratings**************************/
+					$(".rateMe").rate();
+                    /**************************star ratings**************************/
+        </script>
+	</body>
+</html>
