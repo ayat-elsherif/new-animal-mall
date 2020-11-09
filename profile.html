@@ -9,7 +9,8 @@
 		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 		<!-- animate scss -->
 		<link rel="stylesheet" href="assets/css/animate.css">
-		<!-- bootstarp css -->
+        <!-- bootstarp css -->
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<!-- icofont -->
 		<link rel="stylesheet" href="assets/css/icofont.min.css">
@@ -21,8 +22,18 @@
 		<!-- custom scss -->
 		<link rel="stylesheet" href="assets/css/style-ltr.css">
 
-		<title>Animal Mall - Buy or Sell your pets</title>
-	</head>
+        <title>Animal Mall - Buy or Sell your pets</title>
+        
+        <style>
+            .ui-widget-header {
+               height: 30px;
+               border:1px solid #eee;
+            }
+         </style>
+         
+         
+    </head>
+    
 
 	<body>
 		<!-- preloader -->
@@ -214,7 +225,7 @@
         <div class="profileCont">
             <div class="popular-pet single padding-tb white-bg">
                 <div class="container ">
-                    <div class="section-wrapper">
+                    <div class="section-wrapper pet-wrapper">
                         <div class="row justify-content-start">
                             <div class="col-xl-10 col-12 px-0">
                                 <article>                                                       
@@ -292,9 +303,9 @@
                                                         <div class="adsCont">
                                                             <div class="allAds">
                                                                 <div class="row justify-content-around ad-item">
-                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                    <div class="col-md-8 col-12 adDescription">
                                                                         <div class="row">
-                                                                            <div class="col-md-3 col-12">
+                                                                            <div class="col-md-2 col-12">
                                                                                 <img src="assets/images/popular-animal/01.jpg">
                                                                             </div>
                                                                             <div class="col-md-7 col-12">
@@ -305,18 +316,22 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-5 col-12 adControls">
-                                                                        <div class="row px-3">
+                                                                    <div class="col-md-4 col-12 adControls">
+                                                                        <div class="row px-3 justify-content-between">
                                                                             <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
                                                                         <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
                                                                         <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
                                                                         </div>
+                                                                        
+                                                                            <div class="ad-progressbar" id = "progressbar-1"></div> 
+                                                                            <div class="ad-days"> 10 Days</div>
+                                                                       
                                                                     </div>
                                                                 </div>
                                                                 <div class="row justify-content-around ad-item">
-                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                    <div class="col-md-8 col-12 adDescription">
                                                                         <div class="row">
-                                                                            <div class="col-md-3 col-12">
+                                                                            <div class="col-md-2 col-12">
                                                                                 <img src="assets/images/popular-animal/01.jpg">
                                                                             </div>
                                                                             <div class="col-md-7 col-12">
@@ -327,18 +342,21 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-5 col-12 adControls">
-                                                                        <div class="row px-3">
+                                                                    <div class="col-md-4 col-12 adControls">
+                                                                        <div class="row px-3 justify-content-between">
                                                                             <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
                                                                             <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
                                                                             <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
                                                                         </div>
+                                                                        <div class="ad-progressbar" id = "progressbar-2"></div> 
+                                                                        <div class="ad-days"> 15 Days</div>
+
                                                                     </div>
                                                                 </div>
                                                                 <div class="row justify-content-around ad-item">
-                                                                    <div class="col-md-7 col-12 adDescription">
+                                                                    <div class="col-md-8 col-12 adDescription">
                                                                         <div class="row">
-                                                                            <div class="col-md-3 col-12">
+                                                                            <div class="col-md-2 col-12">
                                                                                 <img src="assets/images/popular-animal/01.jpg">
                                                                             </div>
                                                                             <div class="col-md-7 col-12">
@@ -349,12 +367,14 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-5 col-12 adControls">
-                                                                        <div class="row px-3">
+                                                                    <div class="col-md-4 col-12 adControls">
+                                                                        <div class="row px-3 justify-content-between">
                                                                             <button class="btn"> <i class="icofont-toggle-on"></i> STOP </button>
                                                                         <button class="btn"> <i class="icofont-edit-alt"></i> Edit </button>
                                                                         <button class="btn"> <i class="icofont-ui-delete"></i> Delete </button>
                                                                         </div>
+                                                                        <div class="ad-progressbar" id = "progressbar-3"></div> 
+                                                                        <div class="ad-days"> 6 Days</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -416,7 +436,7 @@
                                                     </div>
                                                     <div id="four" class="tabcontent">
                                                         <div class="section-wrapper pet-reviews">
-                                                            <div class="review">
+                                                            <div class="reviews pet-wrapper">
                                                                 <ul class="content">
                                                                     <li>
                                                                         <div class="post-content">
@@ -622,9 +642,10 @@
 
 		
 		<script src="assets/js/jquery.js"></script>
-		<!------------pet-single------------>
-		<script src='assets/js/inline-edit.jquery.js'></script>
-		<!------------end pet single------------->
+		<!------------animalOWner-profile------------>
+        <script src='assets/js/inline-edit.jquery.js'></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<!------------End animalOWner-profile------------->
         <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/isotope.pkgd.min.js"></script>
@@ -715,6 +736,24 @@
 					/**************************star ratings**************************/
 					$(".rateMe").rate();
                     /**************************star ratings**************************/
+
+                  
+                    $(function() {
+                        $( "#progressbar-1" ).progressbar({
+                        value: 30
+                        });
+                        $( "#progressbar-2" ).progressbar({
+                        value: 50
+                        });
+                        $( "#progressbar-3" ).progressbar({
+                        value: 20
+                        });
+                    });
+
+    
+                        $(".adControls .btn:first-child").on('click',function(){
+                            $(this).find('i').toggleClass('off');
+                        });
         </script>
 	</body>
 </html>
