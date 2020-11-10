@@ -29,7 +29,22 @@
 		<!-- <div class="preloader"><div class="load loade"><hr/><hr/><hr/><hr/></div></div> -->
 		<!-- preloader -->
 
-
+		<div class="modalHolder">
+            <div class="modal fade" id="ihNumber" tabindex="-1" role="dialog" aria-labelledby="ihNumberLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">		
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="icofont-close-line"></i></span>
+                          </button>
+					   
+						  IH DETAILS GOES HERE
+                          
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
 	<div class="header-menus">
 		<div class="container-fluid px-0 top-nav">
@@ -194,8 +209,19 @@
 										</div>									
 										<div class="col-lg-9 col-sm-7 col-12">
 											<div class="title">
-												<h6>Vaccinations, Micorchip, Passport</h6>
+												<h4 class="vaccinCollapse collapsed" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Vaccinations, Micorchip, Passport <i class="icofont-rounded-up"></i></h4>
 												<p>300 AED</p>
+											
+												<div class="collapse" id="collapseExample">
+												  <div>
+													  <h6>Biofel PCH</h6>
+													  <span>vaccine against panleukopenia, calicivirus and herpesvirus infections</span>
+													  <h6>CANVAC</h6>
+													  <span>Virus rabiei inactivatum</span>
+													  <h6>MICROCHIP</h6>
+													  <span>dentification tag is a small computer chip containing information linking you to your cat.</span>
+												</div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-2 col-sm-3 text-right">
@@ -210,7 +236,7 @@
 										</div>
 										<div class="col-lg-9 col-sm-7 col-12">
 											<div class="title">
-												<h6>Animal Mall Package</h6>
+												<h4>Animal Mall Package</h4>
 												<p>300 AED</p>
 											</div>
 										</div>
@@ -226,7 +252,7 @@
 										</div>									
 										<div class="col-lg-9 col-sm-7 col-12">
 											<div class="title">
-												<h6>Animal Mall Package</h6>
+												<h4>Animal Mall Package</h4>
 												<p>300 AED</p>
 											</div>
 										</div>
@@ -236,12 +262,167 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="deliverySection">
+							
+						</div>
+						<div class="deliverySection">
+
+							<div class="order-item">
+								<div class="row">
+									<div class="col-lg-1 col-2 px-0">
+										<img src="assets/images/shop/delivery.png">
+									</div>
+								<div class="title col-lg-8 col-9">
+									<h5>DELIVERY INFORMATION</h5>
+									<p>600 AED</p>
+
+								<!--------------------- delivery details for big screens------------------->
+									<div class="calculate-shiping d-none d-sm-block">
+										<div class="outline-select">
+											<select>
+												<option value="volvo">Choose Emirate</option>
+												<option value="saab">Bangladesh</option>
+												<option value="saab">Pakisthan</option>
+												<option value="saab">India</option>
+												<option value="saab">Nepal</option>
+											</select>
+											<span class="select-icon"><i class="icofont-caret-down"></i></span>
+										</div>
+										<div class="outline-select">
+											<select>
+												<option value="volvo">Choose Area</option>
+												<option value="saab">Bangladesh</option>
+												<option value="saab">Pakisthan</option>
+												<option value="saab">India</option>
+												<option value="saab">Nepal</option>
+											</select>
+											<span class="select-icon"><i class="icofont-caret-down"></i></span>
+										</div>
+										<div class="outline-input">
+											<input class="indented" type="text" placeholder="TYPE YOUR IH ADDRESS IF YOU HAVE">
+											<span class="input-icon left"><img src='assets/images/shop/ih.png' width="100"></span>
+											<div class="ihNumber">
+												<a href="#" data-toggle='modal' data-target="#ihNumber"> What is IH?</a>
+											</div>
+										</div>
+										<div class="outline-input">
+											<input type="text" placeholder="YOUR NAME">
+											<span class="input-icon right padding"><i class="icofont-ui-user"></i></span>
+										</div>
+										<div class="outline-input">
+											<input type="text" placeholder="MOBILE NUMBER">
+											<span class="input-icon right padding"><i class="icofont-mobile-phone"></i></span>
+										</div>
+									</div>
+								<!--------------------- End delivery details for big screens------------------->
+								</div>
+
+							<!--------------------- delivery details for mobile------------------->
+								<div class="calculate-shiping col-12 d-block d-sm-none">
+									<div class="outline-select">
+										<select>
+											<option value="volvo">Choose Emirate</option>
+											<option value="saab">Bangladesh</option>
+											<option value="saab">Pakisthan</option>
+											<option value="saab">India</option>
+											<option value="saab">Nepal</option>
+										</select>
+										<span class="select-icon"><i class="icofont-caret-down"></i></span>
+									</div>
+									<div class="outline-select">
+										<select>
+											<option value="volvo">Choose Area</option>
+											<option value="saab">Bangladesh</option>
+											<option value="saab">Pakisthan</option>
+											<option value="saab">India</option>
+											<option value="saab">Nepal</option>
+										</select>
+										<span class="select-icon"><i class="icofont-caret-down"></i></span>
+									</div>
+									<div class="outline-input">
+										<input class="indented" type="text" placeholder="TYPE YOUR IH ADDRESS IF YOU HAVE">
+										<span class="input-icon left"><img src='assets/images/shop/ih.png' width="100"></span>
+										<div class="ihNumber">
+											<a href="#" data-toggle='modal' data-target="#ihNumber"> What is IH?</a>
+										</div>
+									</div>
+									<div class="outline-input">
+										<input type="text" placeholder="YOUR NAME">
+										<span class="input-icon right padding"><i class="icofont-ui-user"></i></span>
+									</div>
+									<div class="outline-input">
+										<input type="text" placeholder="MOBILE NUMBER">
+										<span class="input-icon right padding"><i class="icofont-mobile-phone"></i></span>
+									</div>
+								</div>
+							<!--------------------- End delivery details for mobile------------------->
+
+								</div>
+							</div>	
+
+
+							
+						</div>
+						<div class="paymentSection">
+							<div class="order-item">
+								<div class="row">
+									<div class="col-lg-1 col-2 px-0">
+										<img src="assets/images/shop/paying.png">
+									</div>
+								<div class="title col-lg-8 col-9">
+									<h5>PAYMENT</h5>
+									<p>20 AED</p>
+
+								<!--------------------- delivery details for big screens------------------->
+									<div class="calculate-shiping d-none d-sm-block">
+										<div class="outline-select">
+											<select>
+												<option value="volvo">Bank Transfer</option>
+												<option value="saab">Abu Dhabi Islamic Bank (ADIB)</span></option>
+												<option value="saab">Emirates NBD Bank (ENBD)</option>
+											</select>
+											<span class="select-icon"><i class="icofont-caret-down"></i></span>
+										</div>
+										<div class="outline-select">
+											<select>
+												<option value="volvo">Select Bank</option>
+												<option value="saab"> (ADIB)</span></option>
+												<option value="saab"> (ENBD)</option>
+											</select>
+											<span class="select-icon"><i class="icofont-caret-down"></i></span>
+										</div>	
+										<div class="bankDetails">
+											<p>Account No. 0000000000</p>	
+											<p>IBAN: AE 00000000000000000</p>
+										</div>	
+										<p class="bankReceipt">Upload photo of bank receipt <button class="btn">UPLOAD</button></p>							
+									</div>
+								<!--------------------- End delivery details for big screens------------------->
+								</div>
+
+							<!--------------------- delivery details for mobile------------------->
+								<div class="calculate-shiping col-12 d-block d-sm-none">
+									<div class="outline-select">
+										<select>
+											<option value="volvo">Bank Transfer</option>
+											<option value="saab"> (ADIB)</span></option>
+											<option value="saab"> (ENBD)</option>
+										</select>
+										<span class="select-icon"><i class="icofont-caret-down"></i></span>
+									</div>
+									<div class="outline-select">
+										<select>
+											<option value="volvo">Select Bank</option>
+											<option value="saab"> (ADIB)</span></option>
+											<option value="saab"> (ENBD)</option>
+										</select>
+										<span class="select-icon"><i class="icofont-caret-down"></i></span>
+									</div>
 								
+								</div>
+							<!--------------------- End delivery details for mobile------------------->
+
+								</div>
 							</div>
-							<div class="paymentSection">
-		
-							</div> -->
 						</div>
 					</div>
 					<div class="col-lg-3 col-12">
