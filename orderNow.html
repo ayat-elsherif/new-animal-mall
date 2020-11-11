@@ -187,7 +187,7 @@
 		<div class="orderNowCont">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-9 col-12">
+					<div class="col-lg-9 col-12 mb-5">
 						<div class="orderDetails">
 							<div class="orderSection">
 								<div class="order-item">
@@ -368,13 +368,13 @@
 									<div class="col-lg-1 col-2 px-0">
 										<img src="assets/images/shop/paying.png">
 									</div>
-								<div class="title col-lg-8 col-9">
+								<div class="mt-2 col-lg-8 col-9">
 									<h5>PAYMENT</h5>
-									<p>20 AED</p>
+									<p class="payMethod animated fadeIn mb-4" id='onDelivery' style="display: none;">20 AED</p>
 
 								<!--------------------- delivery details for big screens------------------->
 									<div class="calculate-shiping d-none d-sm-block">
-										<div class="outline-select">
+										<!-- <div class="outline-select">
 											<select>
 												<option value="volvo">Bank Transfer</option>
 												<option value="saab">Abu Dhabi Islamic Bank (ADIB)</span></option>
@@ -394,7 +394,64 @@
 											<p>Account No. 0000000000</p>	
 											<p>IBAN: AE 00000000000000000</p>
 										</div>	
-										<p class="bankReceipt">Upload photo of bank receipt <button class="btn">UPLOAD</button></p>							
+										<p class="bankReceipt">Upload photo of bank receipt <button class="btn">UPLOAD</button></p>							 -->
+									
+										<div class="delivery-info">
+	
+											<div class="form-check">
+												<input type="radio" name='howToPay' value='onDelivery' class='howToPay form-check-input'>
+												 <label class="form-check-label">Cash On Delivery</label>
+											</div>
+											<!-- <div>
+											<div class="theme-color">20 AED Fees</div>
+											</div> -->
+	
+											<div class="form-check">
+												
+													<input type="radio" name='howToPay' value='bankTransfer' class='howToPay form-check-input'> 
+													<label class="form-check-label">Bank Transfer</label>
+	
+											</div>
+											<div class="payMethod animated fadeIn"  id='bankTransfer'>
+												<h6>Payment</h6>
+											<div class="outline-select">
+												<select class="chooseBank">
+													<option value="EmirateBank">Choose Bank..</option>
+													<option value="AbudhabiBank">Abu dhabi Commercial Bank</option>
+													<option value="DubaiBank">Dubai Islamic Bank</option>
+												</select>
+												<span class="select-icon"><i class="icofont-caret-down"></i></span>
+											</div>
+											<div class="bankAccount" id='AbudhabiBank'>
+												<p class="bank-details">Account Number: 11310217910001 <br>
+													IBAN: AE840030011310217910001 <br></p>
+													<div class="photo-groups">
+														<p>Upload photo of bank receipt</p>
+
+													<div class="upload-photo">
+														<div class="photo-mat-icon">Upload</div>
+														<input type="file" class="photo-mat-file" accept="image/*" hidden="">
+														<span class="photo-mat-src"></span>
+													</div>
+													</div>
+											</div>
+											<div class="bankAccount" id='DubaiBank'>
+												<p class="bank-details">Account Number: 009580143455001 <br>
+													IBAN Number: AE640240009580143455001 <br>
+													</p>
+													<div class="photo-groups">
+														<p >Upload photo of bank receipt</p>
+													<div class="upload-photo">
+														
+														<div class="photo-mat-icon">Upload</div>
+														<input type="file" class="photo-mat-file" accept="image/*" hidden="">
+														<span class="photo-mat-src"></span>
+													</div>
+													</div>
+											</div>
+											</div>
+										</div>
+									
 									</div>
 								<!--------------------- End delivery details for big screens------------------->
 								</div>
@@ -425,27 +482,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-12">
-						<div class="orderBrief">
-							<div class="brief-item">
-								<span><small>Persian Female 2 Months</small></span>
-								<p>350 AED</p>
+					<div class="col-lg-3 col-12 mb-5">
+						<div class="sideBrief">
+							<div class="orderBrief">
+								<div class="brief-item">
+									<span><small>Persian Female 2 Months</small></span>
+									<p>350 AED</p>
+								</div>
+								<div class="brief-item">
+									<span><small>Cage Box</small></span>
+									<p>350 AED</p>
+								</div>
+								<div class="brief-item">
+									<span><small>Vaccinations</small></span>
+									<p>350 AED</p>
+								</div>
+								<div class="brief-item">
+									<span class="text-bold">TOTAL</span>
+									<p>350 AED</p>
+								</div>
 							</div>
-							<div class="brief-item">
-								<span><small>Cage Box</small></span>
-								<p>350 AED</p>
+							<div class="orderNow">
+								<button class="w-100 btn animal-btn"> <span>Order Now</span></button>
 							</div>
-							<div class="brief-item">
-								<span><small>Vaccinations</small></span>
-								<p>350 AED</p>
-							</div>
-							<div class="brief-item">
-								<span class="text-bold">TOTAL</span>
-								<p>350 AED</p>
-							</div>
-						</div>
-						<div class="orderNow">
-							<button class="w-100 btn animal-btn"> <span>Order Now</span></button>
 						</div>
 					</div>
 				</div>

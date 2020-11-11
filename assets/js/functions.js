@@ -414,4 +414,49 @@
         },
         loop: true
     });
+
+
+
+     /*******************************Delivery Options***************************** */
+ $(".form-check").on('click', function(){
+    $('.payMethod').css('display','none');
+    $(this).find('.howToPay').prop('checked',true);
+        let switchClass= $(this).find('.howToPay').val();
+       $('#'+switchClass).css('display','block');
+     
+ });
+
+ 
+ $('.chooseBank').on('change',function(){
+    $('.bankAccount').css('display','none');
+     let bankName=$(this).val();
+     $('#'+bankName).css('display','block');
+
+ });
+
+ $('.photo-icon').on('click',function(){
+    $(this).next('.photo-file').click();
+});
+
+
+
+    /**********************Start open photos in chef profile********************** */
+    $('.photo-icon').on('click',function(){
+        $(this).next('.photo-file').click();
+    });
+
+    $('.photo-mat-icon').on('click',function(){
+        $(this).next('.photo-mat-file').click();
+    });
+
+    $('.photo-mat-file').on('change',function(){
+        let fileVal=$(this).val();
+        fileVal = fileVal.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+        $(this).next('.photo-mat-src').text(fileVal);
+    });
+
+    /**********************End open photos in chef profile********************** */
+
+
+    
 }(jQuery));
