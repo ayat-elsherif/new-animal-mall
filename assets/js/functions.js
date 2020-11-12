@@ -452,11 +452,11 @@
     $('.photo-mat-file').on('change',function(){
         let fileVal=$(this).val();
         fileVal = fileVal.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
-        $(this).next('.photo-mat-src').text(fileVal);
+        $(this).next('.photo-mat-src').text(fileVal).next('i').removeClass('d-none');
     });
 
     /**********************End open photos in chef profile********************** */
 
 
-    
+
 }(jQuery));
