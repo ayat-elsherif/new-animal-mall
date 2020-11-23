@@ -440,12 +440,8 @@
 
 
 
-    /**********************Start open photos in chef profile********************** */
-    $('.photo-icon').on('click',function(){
-        $(this).next('.photo-file').click();
-    });
-
-    $('.photo-mat-icon').on('click',function(){
+    /**********************Start open photos********************** */
+      $('.photo-mat-icon').on('click',function(){
         $(this).next('.photo-mat-file').click();
     });
 
@@ -455,18 +451,16 @@
         $(this).next('.photo-mat-src').text(fileVal).next('i').removeClass('d-none');
     });
     
-    $('.upload-photo i').on('click',function(){
-        
+    $('.upload-photo i').on('click',function(){   
         let upFile=$(this).parent('.upload-photo').find('.photo-mat-file');
         let upName=$(this).parent('.upload-photo').find('.photo-mat-src');
         upFile.wrap('<form>').closest('form').get(0).reset();
         upFile.unwrap();
         upName.text('');
-        $(this).addClass('d-none');
-      
+        $(this).addClass('d-none');  
     });
    
-    /**********************End open photos in chef profile********************** */
+    /**********************End open photos ********************** */
 
     /**************************Order now page******************* */
     $('.addItem').on('click',function(){
@@ -474,10 +468,7 @@
        let itemPrice=parseInt($('#' +itemType ).find('p').find('span').text());
        let totalVal=parseInt($('#total').find('p').find('span').text());
        let total=$('#total').find('p').find('span');
-    //    let itemVal=parseInt($(this).parents('.order-item').find('p').find('span').text());
-    //    let originItemVal= parseInt($('#'+itemType).find('p').find('span').text(itemVal));
-    //    console.log(itemVal+50);
-    //    console.log(originItemVal);
+ 
        if($(this).text()=='REMOVE'){
             $(this).text('ADD');
             $('#' +itemType ).css('display','none');

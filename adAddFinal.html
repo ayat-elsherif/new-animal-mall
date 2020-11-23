@@ -17,10 +17,11 @@
 	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
 	<!-- lightcase css -->
 	<link rel="stylesheet" href="assets/css/lightcase.css">
+	<link rel="stylesheet" href="assets/css/croppie.css">
 	<!-- swiper css -->
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<!-- custom scss -->
-	<link rel="stylesheet" href="assets/css/style-ltr.css">
+	<link rel="stylesheet" href="assets/css/style-ltr.css">	
 
 	<title>Animal Mall - Buy or Sell your pets</title>
 </head>
@@ -29,6 +30,33 @@
 	<!-- preloader -->
 	<!-- <div class="preloader"><div class="load loade"><hr/><hr/><hr/><hr/></div></div> -->
 	<!-- preloader -->
+
+
+	<div class="modal-container">
+		<div id="uploadimageModal" class="modal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Upload & Crop Image</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+	
+					</div>
+					<div class="modal-body text-center">
+						<div class=" text-center">
+							<div id="image_demo" style=" margin-top:30px"></div>
+						</div>
+						<div class=" text-center" style="padding-bottom:30px;padding-top:10px">
+							<button class="btn  crop_image" type="button" name="main_photo" class="custom-file-input" id="main" accept="image/*" >Upload Image</button>
+						</div>
+					</div>
+					<!-- <div class="modal-footer text-center">
+						<button type="button" class="btn btn-outline-dark px-3" data-dismiss="modal">Close</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	
+	</div>
 
 	<div class="header-menus">
 		<div class="container-fluid px-0 top-nav">
@@ -178,19 +206,17 @@
 					<div class="alert alert-warning"> <i class="icofont-warning"></i> The Gender Field Is Required <span class="close" data-dismiss="alert"> <i class="icofont-close-line"></i></span></div>
 					<div class="alert alert-warning"> <i class="icofont-warning"></i> The Gender Field Is Required <span class="close" data-dismiss="alert"> <i class="icofont-close-line"></i></span></div>
 					<div class="row">
-
-						<div class="col-lg-8 col-md-10 col-12">
+						<div class="col-12 mt-md-5 mt-3">
 							<div>Upload Photos</div>
 							<div class="photo-groups">
 								<div class="upload-photo">
 									<div class="photo-mat-icon"><i class="icofont-camera"></i> Photo</div>
-									<input type="file" class="photo-mat-file" accept="image/*" hidden="">
+									<input type="file" class="photo-mat-file" id='main-photo' accept="image/*" hidden="">
 									<span class="photo-mat-src"></span>
 									<i class="icofont-close-circled d-none"></i>
 								</div>
 							</div>
 							<div class="photo-groups">
-		
 								<div class="upload-photo">
 									<div class="photo-mat-icon"><i class="icofont-camera"></i> Photo</div>
 									<input type="file" class="photo-mat-file" accept="image/*" hidden="">
@@ -209,7 +235,7 @@
 							<div class="photo-groups">
 								<div class="upload-photo">
 									<div class="photo-mat-icon"><i class="icofont-video"></i> Video</div>
-									<input type="file" class="photo-mat-file" accept="image/*" hidden="">
+									<input type="file" class="photo-mat-file" accept="video/*" hidden="">
 									<span class="photo-mat-src"></span>
 									<i class="icofont-close-circled d-none"></i>
 								</div>
@@ -220,7 +246,7 @@
 						<div class="col-lg-8 col-md-10 col-12">
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Breed <span class="text-danger">*</span></label>
-								<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+								<div class="col-md-7 col-12">
 									<select required="" class="form-control small-select" name="breed">
 										<option selected="" disabled="">Choose Breed</option>
 																																					<option value="6">
@@ -260,13 +286,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Gender <span class="text-danger">*</span></label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="male" value="male" name="gender" class="custom-control-input">
 										<label class="custom-control-label gender" for="male">Male</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="female" value="female" name="gender" class="custom-control-input">
 										<label class="custom-control-label gender" for="female">Female</label>
@@ -290,13 +316,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Litter box trained</label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="litter1" value="1" name="trained" class="custom-control-input">
 										<label class="custom-control-label yes" for="litter1">Yes</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="litter2" value="0" name="trained" class="custom-control-input">
 										<label class="custom-control-label no" for="litter2">No</label>
@@ -305,13 +331,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Healthy</label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="healthy1" name="healthy" class="custom-control-input" value="1">
 										<label class="custom-control-label yes" for="healthy1">Yes</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="healthy2" name="healthy" class="custom-control-input" value="0">
 										<label class="custom-control-label no" for="healthy2">No</label>
@@ -320,13 +346,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Vaccinations</label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="vaccinations1" name="vaccinations" class="custom-control-input" value="1">
 										<label class="custom-control-label yes" for="vaccinations1">Yes</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="vaccinations2" name="vaccinations" class="custom-control-input" value="0">
 										<label class="custom-control-label no" for="vaccinations2">No</label>
@@ -335,13 +361,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Passport</label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="passport1" name="passport" class="custom-control-input" value="1">
 										<label class="custom-control-label yes" for="passport1">Yes</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="passport2" name="passport" class="custom-control-input" value="0">
 										<label class="custom-control-label no" for="passport2">No</label>
@@ -350,13 +376,13 @@
 							</div>
 							<div class="form-group row group">
 								<label class="col-form-label-sm col-12">Spaying / neutering</label>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="spaying" name="spaying" class="custom-control-input" value="1">
 										<label class="custom-control-label yes" for="spaying">Yes</label>
 									</div>
 								</div>
-								<div class="col-lg-2 col-md-2 col-sm-2 col-xl-2">
+								<div class="col-lg-2 col-md-2 col-4">
 									<div class="custom-control custom-radio">
 										<input type="radio" id="spaying2" name="spaying" class="custom-control-input" value="0">
 										<label class="custom-control-label no" for="spaying2">No</label>
@@ -373,9 +399,10 @@
 								</div>
 							</div>
 							<p class="text-muted mall-price"><small>Animal Mall Price: <span id="priceWithCommission"><span>0</span></span> AED</small></p>
-							<button type="submit" class="btn animal-btn style-2 sub col-sm-5 col-12"><span>Back</span></button>
-		
-							<button type="submit" class="btn animal-btn sub col-sm-5 col-12 mx-3"><span>Submit</span></button>
+							<div class="button-group">
+								<button type="submit" class="btn animal-btn style-2 sub col-5"><span> <i class="icofont-rounded-left"></i> Back</span></button>
+								<button type="submit" class="btn animal-btn sub col-5 "><span>Submit</span></button>
+							</div>
 						
 						</div>
 					</div>
@@ -484,14 +511,65 @@
 
 
 	<script src="assets/js/jquery.js"></script>
+	<!-- <script src="assets/js/jquery-3.4.1.min.js"></script> -->
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/swiper.min.js"></script>
 	<script src="assets/js/lightcase.js"></script>
+	<script src="assets/js/croppie.js"></script>
 	<script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="assets/js/functions.js"></script>
+	<script>
+		    /**************************Crop The image******************** */
+
+		$(document).ready(function(){
+
+			$image_crop = $('#image_demo').croppie({
+				enableExif: true,
+				viewport: {
+				width:200,
+				height:200,
+				type:'square' //circle
+				},
+				boundary:{
+				width:300,
+				height:300
+				}
+			});
+
+			$('.upload-photo #main-photo').on('change', function(){
+			var reader = new FileReader();
+			reader.onload = function (event) {
+			$image_crop.croppie('bind', {
+				url: event.target.result
+			});
+			}
+			reader.readAsDataURL(this.files[0]);
+			$('#uploadimageModal').modal('show');
+			});
+
+			// $('.crop_image').click(function(event){
+			// 	$image_crop.croppie('result', {
+			// 		type: 'canvas',
+			// 		size: 'viewport'
+			// 		}).then(function(response){
+			// 		$.ajax({
+			// 			url:"upload.php",
+			// 			type: "POST",
+			// 			data:{"image": response},
+			// 			success:function(data)
+			// 			{
+			// 			$('#uploadimageModal').modal('hide');
+			// 			$('#uploaded_image').html(data);
+			// 			}
+			// 		});
+			// 	})
+			// });
+
+		}); 
+	</script>
 </body>
 
 </html>
